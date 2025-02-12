@@ -102,7 +102,7 @@ function greetUser(name, time) {
   if (time !== "morning" && time !== "afternoon" && time !== "evening") {
     return "Invalid time provided: please enter morning, afternoon, or evening";
   }
-  return `Good ${time}, ${name}`;
+  return `Good ${time}, ${name}!`;
 }
 
 console.log("Exercise 5 Result:", greetUser("Sam", "morning"));
