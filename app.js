@@ -196,3 +196,46 @@ function convertTemperature(temp, scale) {
 }
 
 console.log("Exercise 8 Result:", convertTemperature(28, "F"));
+
+/*
+Exercise 9: basicCalculator()
+
+Create a function named basicCalculator. 
+It should take three arguments: two numbers and a string representing 
+an operation ('add', 'subtract', 'multiply', 'divide'). 
+Perform the provided operation on the two numbers. 
+In operations where the order of numbers is important, 
+treat the first parameter as the first operand and the 
+second parameter as the second operand.
+
+Example: basicCalculator(10, 5, 'subtract') should return 5.
+
+Complete the exercise in the space below:
+*/
+
+function basicCalculator(num1, num2, operation) {
+  if (typeof num1 !== "number" || typeof num2 !== "number") {
+    return "Please enter numbers in the calculator";
+  }
+  if (typeof operation !== "string") {
+    return "Please enter a valid (string) operation";
+  }
+  operation = operation.toLowerCase();
+  switch (
+    operation //using switch case control flow
+  ) {
+    case "add":
+      return num1 + num2;
+    case "subtract":
+      return num1 - num2;
+    case "multiply":
+      return num1 * num2;
+    case "divide":
+      if (num2 === 0) return "Cannot divide by zero.";
+      return num1 / num2;
+    default:
+      return "Please enter a valid operation: 'add', 'subtract', 'multiply', 'divide'.";
+  }
+}
+
+console.log("Exercise 9 Result:", basicCalculator(10, 0, "divide"));
