@@ -239,3 +239,33 @@ function basicCalculator(num1, num2, operation) {
 }
 
 console.log("Exercise 9 Result:", basicCalculator(10, 0, "divide"));
+
+/*
+Exercise 10: calculateGrade()
+
+Define a function called calculateGrade. 
+It should take a numerical score and return the corresponding letter 
+grade (A, B, C, D, F). 
+
+For example, 90 and above yields an 'A', 80-89 is a 'B', 
+and 70-79 is a 'C', 60-69 is a 'D' and anything lower than a 60 is an 'F'.
+
+Example: calculateGrade(100) should return A.
+
+Complete the exercise in the space below:
+*/
+
+function calculateGrade(score) {
+  if (typeof score !== "number" || score < 0) {
+    return "please enter a valid numerical score(0 or higher)"; //we assume valid scores can be >100
+  }
+  if (score >= 90) return "A";
+
+  if (80 <= score && score < 90) return "B";
+
+  if (70 <= score && score < 80) return "C";
+  if (60 <= score && score < 70) return "D";
+  return "F";
+}
+
+console.log("Exercise 10 Result:", calculateGrade(85));
