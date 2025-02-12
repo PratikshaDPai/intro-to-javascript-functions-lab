@@ -302,3 +302,18 @@ function createUsername(firstName, lastName) {
   return result;
 }
 console.log("Exercise 11 Result:", createUsername(" Dan ", "Brown"));
+
+/*
+Exercise 12: numArgs()
+
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+function numArgs(...args) {
+  return args.length; //looked up the function definition in VSCode and saw function numArgs(...args: any[]): number
+  //looked up what ...args is and found that it's an array, and args.length would give the number of args
+}
+
+console.log("Exercise 12 Result:", numArgs(1, 2, 3, 4));
