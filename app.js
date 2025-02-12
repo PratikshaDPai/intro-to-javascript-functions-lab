@@ -99,7 +99,7 @@ Complete the exercise in the space below:
 
 function greetUser(name, time) {
   time = time.toLowerCase();
-  if (time !== "morning" || time !== "afternoon" || time !== "evening") {
+  if (time !== "morning" && time !== "afternoon" && time !== "evening") {
     return "Invalid time provided: please enter morning, afternoon, or evening";
   }
   return `Good ${time}, ${name}`;
