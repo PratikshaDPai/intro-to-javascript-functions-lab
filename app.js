@@ -30,7 +30,7 @@ Complete the exercise in the space below:
 */
 
 function isAdult(age) {
-  return age >= 18 ? "adult" : "minor";
+  return age >= 18 ? "Adult" : "Minor";
 }
 
 console.log("Exercise 2 Result:", isAdult(17.99999999999));
