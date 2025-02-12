@@ -30,10 +30,13 @@ Complete the exercise in the space below:
 */
 
 function isAdult(age) {
+  if (typeof age !== "number") {
+    return "Age must be a number, please try again";
+  }
   return age >= 18 ? "Adult" : "Minor";
 }
 
-console.log("Exercise 2 Result:", isAdult(17.99999999999));
+console.log("Exercise 2 Result:", isAdult(32));
 
 /*
 Exercise 3: isCharAVowel()
